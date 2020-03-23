@@ -22,7 +22,7 @@ int main(void) {
 		else show = 0;
 		int i;
 		for (i = 0; i < 5; i++) {
-			printf("\nTry %d | Data 10^%d | RT : %6.1f ns\n", try, i + 2, testbench(1, 100, pow(10, i + 2), show));
+			printf("\nTry %d | Data 10^%d | RT : %6.1f ns", try, i + 2, testbench(1, 100, pow(10, i + 2), show));
 			if (show == 1) system("pause");
 		}
 
