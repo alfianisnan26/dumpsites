@@ -4,7 +4,7 @@
 #include <conio.h>
 #include <Windows.h>
 
-#define printarr(arr, n) printf("\n\n");for(int a = 0; a < n; a++)printf("%d, ", arr[a]);
+#define printarr(arr, n) printf("\n\n");for(a = 0; a < n; a++)printf("%d, ", arr[a]);
 
 float testbench(int, int, int, int);
 int* counting_sort(int*, int, int);
