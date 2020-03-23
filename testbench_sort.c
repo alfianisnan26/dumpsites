@@ -16,17 +16,17 @@ int main(void) {
 	do {
 		try++;
 		system("cls");
-		printf("Show Array? Y/N\n\n");
+		printf("Show Array? Y/N\n");
 		show = _getch();
 		if (show == 'Y' || show == 'y') show = 1;
 		else show = 0;
 		int i;
 		for (i = 0; i < 5; i++) {
-			printf("Try %d | Data 10^%d | RT : %6.1f ns\n", try, i + 2, testbench(1, 100, pow(10, i + 2), show));
+			printf("\nTry %d | Data 10^%d | RT : %6.1f ns\n", try, i + 2, testbench(1, 100, pow(10, i + 2), show));
 			if (show == 1) system("pause");
 		}
 
-		printf("\nRetry? Y/N");
+		printf("\n\nRetry? Y/N");
 		show = _getch();
 		if (show == 'Y' || show == 'y') show = 1;
 		else show = 0;
@@ -53,7 +53,7 @@ float testbench(int min_number, int max_number, int n_data, int show) {
 	//Sorting
 
 	//arr = counting_sort(arr, max_number, n_data);
-	mergeSort(arr, 0, n_data-1); //SORTING FUNCTION HERE
+	//mergeSort(arr, 0, n_data-1); //SORTING FUNCTION HERE
 
 	//Stop RunningTime Counter
 	rt = clock() - rt;
